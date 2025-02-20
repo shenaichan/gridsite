@@ -30,10 +30,12 @@ export default function Home() {
           <p>is a</p>
           <p>PROGRAMMER</p>
           <p>
-            <span style={{ color: "var(--neutral-color)" }}>&</span>DESIGNER
+            {/* <span style={{ color: "var(--soft-red-color)" }}>&</span> */}
+            &DESIGNER
           </p>
           <p>
-            <span style={{ color: "var(--neutral-color)" }}>&</span>ARTIST
+            {/* <span style={{ color: "var(--soft-red-color)" }}>&</span> */}
+            &ARTIST
           </p>
         </div>
       </div>
