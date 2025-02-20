@@ -3,6 +3,8 @@ import css from "./base.module.css";
 
 const first = "✸SHENAI".split("");
 const last = "CHAN".split("");
+const projects = "PROJECTS→".split("");
+const projectsLeft = "←PROJECTS".split("").reverse();
 
 export default function Home() {
   return (
@@ -24,7 +26,6 @@ export default function Home() {
           style={{
             gridRow: "5",
             gridColumn: "2",
-            position: "relative",
             top: "10px",
           }}
           className={css.myName}
@@ -35,7 +36,6 @@ export default function Home() {
           style={{
             gridRow: "6",
             gridColumn: "2",
-            position: "relative",
             top: "30px",
           }}
           className={css.myName}
@@ -46,7 +46,7 @@ export default function Home() {
         {first.map((letter, idx) => (
           <div
             key={`${letter}${idx}`}
-            style={{ gridRow: `${idx + 1}`, gridColumn: "5" }}
+            style={{ gridRow: `${idx + 1}`, gridColumn: "5", left: "-5px" }}
             className={css.myName}
           >
             <p>{letter}</p>
@@ -55,7 +55,7 @@ export default function Home() {
         {last.map((letter, idx) => (
           <div
             key={`${letter}${idx}`}
-            style={{ gridRow: `${idx + 6}`, gridColumn: "4" }}
+            style={{ gridRow: `${idx + 6}`, gridColumn: "4", right: "-5px" }}
             className={`${css.myName} ${css.red}`}
           >
             <p>{letter}</p>
@@ -63,16 +63,18 @@ export default function Home() {
         ))}
         <div className={css.tilt}></div>
         <div className={css.occupation}>
-          <p>is a</p>
-          <p>PROGRAMMER</p>
-          <p>
-            <span style={{ color: "var(--emph-text-color)" }}>&</span>
-            DESIGNER
-          </p>
-          <p>
-            <span style={{ color: "var(--emph-text-color)" }}>&</span>
-            ARTIST
-          </p>
+          <div>
+            <p>is a</p>
+            <p>PROGRAMMER</p>
+            <p>
+              <span style={{ color: "var(--emph-text-color)" }}>&</span>
+              DESIGNER
+            </p>
+            <p>
+              <span style={{ color: "var(--emph-text-color)" }}>&</span>
+              ARTIST
+            </p>
+          </div>
         </div>
       </div>
       <div className={css.stripe}></div>
@@ -100,10 +102,54 @@ export default function Home() {
       <div className={css.desperation}>
         SEEKING FULLTIME SOFTWARE ENGINEERING WORK!
       </div>
-      <div className={css.projects}>
+      {/* <div className={css.projects}>
         <p style={{ fontSize: "100px" }}>✸</p>
         <p>PROJECTS</p>
-        {/* <Project /> */}
+      </div> */}
+      <div id={css.bottomInfra}>
+        {projectsLeft.map((letter, idx) => (
+          <div
+            key={`${letter}${idx}`}
+            style={{
+              gridRow: `${idx + 1}`,
+              gridColumn: "2",
+              transform: "rotate(-90deg)",
+              right: idx === 8 ? "12px" : "auto",
+              fontSize: idx === 8 ? "85px" : "auto",
+              color: idx === 8 ? "#FF0000" : "auto",
+            }}
+            className={css.projects}
+          >
+            <p>{letter}</p>
+          </div>
+        ))}
+        {projects.map((letter, idx) => (
+          <div
+            key={`${letter}${idx}`}
+            style={{
+              gridRow: `${idx + 1}`,
+              gridColumn: "4",
+              transform: "rotate(90deg)",
+              left: idx === 8 ? "12px" : "auto",
+              fontSize: idx === 8 ? "85px" : "auto",
+              color: idx === 8 ? "#FF0000" : "auto",
+            }}
+            className={css.projects}
+          >
+            <p>{letter}</p>
+          </div>
+        ))}
+        <div className={css.diamondContainer}>
+          <div className={css.skillDiamond}></div>
+        </div>
+        <div className={css.skilledAcross}>
+          <div style={{ fontWeight: "500", fontSize: "24px" }}>
+            <p>SKILLED ACROSS</p>
+            <p>FULLSTACK DEVELOPMENT,</p>
+            <p>UI/UX/USER RESEARCH, </p>
+            <p>& EMBEDDED SYSTEMS.</p>
+          </div>
+        </div>
       </div>
     </div>
   );
