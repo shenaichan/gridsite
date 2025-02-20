@@ -3,7 +3,8 @@
   grid-template-columns: 1fr 60px 440px repeat(2, 60px) 1fr;
   grid-template-rows:
     minmax(800px, auto)
-    275px 350px auto 200px 1fr;
+    275px 400px auto 400px 1fr;
+  overflow: hidden;
 }
 
 #littleInfra {
@@ -16,9 +17,9 @@
 }
 
 .projects {
-  font-size: 40px;
+  font-size: 60px;
   font-family: var(--font-martian);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--main-text-color);
   grid-area: 6 / 2 / 7 / -2;
   line-height: 1.2;

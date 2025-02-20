@@ -101,6 +101,7 @@ export default function Home() {
         SEEKING FULLTIME SOFTWARE ENGINEERING WORK!
       </div>
       <div className={css.projects}>
+        <p style={{ fontSize: "100px" }}>✸</p>
         <p>PROJECTS</p>
         {/* <Project /> */}
       </div>
