@@ -1,4 +1,5 @@
 import css from "./base.module.css";
+// import Project from "./_project";
 
 const first = "✸SHENAI".split("");
 const last = "CHAN".split("");
@@ -95,6 +96,13 @@ export default function Home() {
           <a href="">Recurse Center</a>, where they developed lots of fun web
           and hardware projects.
         </p>
+      </div>
+      <div className={css.desperation}>
+        SEEKING FULLTIME SOFTWARE ENGINEERING WORK!
+      </div>
+      <div className={css.projects}>
+        <p>PROJECTS</p>
+        {/* <Project /> */}
       </div>
     </div>
   );

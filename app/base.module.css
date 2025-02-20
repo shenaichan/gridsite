@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 60px 440px repeat(2, 60px) 1fr;
   grid-template-rows:
     minmax(800px, auto)
-    repeat(2, 300px) 1fr;
+    275px 350px auto 200px 1fr;
 }
 
 #littleInfra {
@@ -14,6 +14,43 @@
   grid-template-rows: 100px repeat(8, 60px) 1fr 220px;
   grid-area: 1 / 1 / 2 / -1;
 }
+
+.projects {
+  font-size: 40px;
+  font-family: var(--font-martian);
+  font-weight: 600;
+  color: var(--main-text-color);
+  grid-area: 6 / 2 / 7 / -2;
+  line-height: 1.2;
+}
+
+.desperation {
+  font-size: 40px;
+  font-family: var(--font-martian);
+  font-weight: 600;
+  color: var(--emph-text-color);
+  grid-area: 4 / 1 / 5 / -1;
+  text-align: center;
+  line-height: 1.2;
+  border-top: 10px dotted white;
+  border-bottom: 10px dotted white;
+  /* background-color: white; */
+  padding: 10px;
+  /* white-space: nowrap; */
+  /* animation: marquee 12s linear infinite; */
+}
+
+/* @keyframes marquee {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(calc(-1500px + 100%));
+  }
+  100% {
+    transform: translateX(10px);
+  }
+} */
 
 .myName {
   font-size: 60px;
