@@ -1,15 +1,24 @@
 #infra {
   display: grid;
+  grid-template-columns: 1fr minmax(300px, 600px) repeat(2, 60px) 1fr;
+  grid-template-rows:
+    auto
+    repeat(2, 250px) 1fr;
+}
+
+#littleInfra {
+  display: grid;
   height: 100vh;
-  grid-template-columns: minmax(0px, 1fr) 400px repeat(2, 60px) minmax(0px, 1fr);
-  grid-template-rows: 100px repeat(8, 60px) 1fr 200px;
+  max-height: 1000px;
+  grid-template-columns: 1fr minmax(300px, 600px) repeat(2, 60px) 1fr;
+  grid-template-rows: 100px repeat(8, 60px) 1fr 220px;
+  grid-area: 1 / 1 / 2 / -1;
 }
 
 .myName {
-  font-size: 50px;
+  font-size: 60px;
   font-family: var(--font-martian);
   font-weight: 600;
-  font-variation-settings: "wdth" 100;
   color: var(--main-text-color);
   display: flex;
   align-items: center;
@@ -21,15 +30,37 @@
 }
 
 .occupation {
-  font-size: 30px;
+  font-size: 40px;
+  line-height: 1.2;
   font-family: var(--font-martian);
   font-weight: 400;
   font-variation-settings: "wdth" 112.5;
   color: var(--main-text-color);
+  grid-area: 11 / 2;
 }
 
 .stripe {
   grid-area: 1 / 3 / -1 / 5;
-  z-index: -1;
+  z-index: -2;
   background-color: white;
+}
+
+.tilt {
+  background-color: #ffb9bd;
+  grid-area: 11 / 2;
+  z-index: -1;
+  transform: rotate(-30deg);
+  height: 1500px;
+  width: 400px;
+  position: relative;
+  top: -800px;
+  left: -90px;
+}
+
+.paragraph {
+  font-family: var(--font-martian);
+  font-size: 20px;
+  grid-column: 2;
+  font-weight: 300;
+  position: relative;
 }

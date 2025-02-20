@@ -68,7 +68,8 @@ h6 {
 }
 
 :root {
-  background-color: #f4f0e7;
+  --neutral-color: #f4f0e7;
+  background-color: var(--neutral-color);
   --main-text-color: #161242;
   --emph-text-color: #ff0000;
   --font-martian: none;
