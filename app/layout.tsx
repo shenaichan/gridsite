@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import css from "./base.module.css";
 import { Martian_Mono } from "next/font/google";
 
 const martian = Martian_Mono({
   variable: "--font-martian",
   axes: ["wdth"],
   fallback: ["monospace"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {

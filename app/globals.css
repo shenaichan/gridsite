@@ -66,3 +66,10 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  background-color: #f4f0e7;
+  --main-text-color: #161242;
+  --emph-text-color: #ff0000;
+  --font-martian: none;
+}
