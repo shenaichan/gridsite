@@ -6,6 +6,7 @@
     275px 400px auto 350px 1fr;
   overflow: hidden;
   font-family: var(--font-martian);
+  color: var(--main-text-color);
 }
 
 #littleInfra {
@@ -49,6 +50,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  /* color: var(--main-text-color); */
 }
 
 .projects {
@@ -168,6 +170,8 @@
   grid-column: 2 / 4;
   font-weight: 300;
   position: relative;
+  /* color: var(--main-text-color); */
+
   /* width: 400px; */
 }
 

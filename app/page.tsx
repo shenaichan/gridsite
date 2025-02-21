@@ -95,8 +95,8 @@ export default function Home() {
       <div style={{ gridRow: "3", left: "100px" }} className={css.paragraph}>
         <p>
           In Fall 2024, they participated in a programming retreat at the{" "}
-          <a href="">Recurse Center</a>, where they developed lots of fun web
-          and hardware projects.
+          <a href="https://www.recurse.com/">Recurse Center</a>, where they
+          developed lots of fun web and hardware projects.
         </p>
       </div>
       <div className={css.desperation}>
@@ -108,16 +108,20 @@ export default function Home() {
           // border: "1px solid black",
           position: "relative",
           right: "20px",
+          // top: "30px",
+          bottom: "70px",
           display: "flex",
           alignItems: "flex-end",
           justifyContent: "flex-end",
-          fontSize: "300px",
+          fontSize: "100px",
           lineHeight: "1",
-          color: "var(--soft-red-color)",
+          fontVariationSettings: "'wdth' 70",
+          fontWeight: "600",
+          color: "var(--emph-text-color)",
           fontFamily: "var(--font-martian)",
         }}
       >
-        ✸
+        {"{</>}"}
       </div>
       {/* <div className={css.projects}>
         <p style={{ fontSize: "100px" }}>✸</p>
