@@ -102,6 +102,23 @@ export default function Home() {
       <div className={css.desperation}>
         SEEKING FULLTIME SOFTWARE ENGINEERING WORK!
       </div>
+      <div
+        style={{
+          gridArea: "-2 / 2 / -3 / -2 ",
+          // border: "1px solid black",
+          position: "relative",
+          right: "20px",
+          display: "flex",
+          alignItems: "flex-end",
+          justifyContent: "flex-end",
+          fontSize: "300px",
+          lineHeight: "1",
+          color: "var(--soft-red-color)",
+          fontFamily: "var(--font-martian)",
+        }}
+      >
+        ✸
+      </div>
       {/* <div className={css.projects}>
         <p style={{ fontSize: "100px" }}>✸</p>
         <p>PROJECTS</p>

@@ -5,6 +5,7 @@ import { Martian_Mono } from "next/font/google";
 const martian = Martian_Mono({
   variable: "--font-martian",
   axes: ["wdth"],
+  adjustFontFallback: false,
   fallback: ["monospace"],
   subsets: ["latin"],
 });
