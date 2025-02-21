@@ -79,7 +79,7 @@ export default function Home() {
       </div>
       <div className={css.stripe}></div>
       <div style={{ gridRow: "2", left: "50px" }} className={css.paragraph}>
-        <p>
+        {/* <p>
           ... living across <span className={css.bold}>Austin, TX</span>, and
           the <span className={css.bold}>San Francisco Bay Area</span>.
         </p>
@@ -90,13 +90,39 @@ export default function Home() {
           <span className={css.bold}>Computer Engineering</span> at{" "}
           <span className={css.bold}>Carnegie Mellon</span>, but these days they
           mostly work on the web.
+        </p> */}
+        <p>
+          ... who loves working{" "}
+          <span className={css.bold}>across diciplines</span> and with{" "}
+          <span className={css.bold}>diverse groups of people</span>.
         </p>
+        <br />
+        <p>
+          ... who believes <span className={css.bold}>writing is thinking</span>
+          , and is always seeking to be a better communicator and a better{" "}
+          <span className={css.bold}>student of the world</span>.
+        </p>
+        <br />
       </div>
       <div style={{ gridRow: "3", left: "100px" }} className={css.paragraph}>
-        <p>
+        {/* <p>
           In Fall 2024, they participated in a programming retreat at the{" "}
           <a href="https://www.recurse.com/">Recurse Center</a>, where they
           developed lots of fun web and hardware projects.
+        </p>
+        <br /> */}
+        {/* <p>... who is currently...</p> */}
+        <p>
+          ... who studied{" "}
+          <span className={css.bold}>human-computer interaction</span> and{" "}
+          <span className={css.bold}>computer engineering</span> at{" "}
+          <span className={css.bold}>Carnegie Mellon</span>, and participated in
+          a selective programming retreat at the{" "}
+          <a href="https://www.recurse.com/">Recurse Center</a>.
+        </p>
+        <br />
+        <p className={css.bold} style={{ fontSize: "22px" }}>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... who is currently...
         </p>
       </div>
       <div className={css.desperation}>
@@ -164,11 +190,18 @@ export default function Home() {
           <div className={css.skillDiamond}></div>
         </div>
         <div className={css.skilledAcross}>
-          <div style={{ fontWeight: "500", fontSize: "24px" }}>
-            <p>SKILLED ACROSS</p>
+          <div style={{ fontSize: "22px", whiteSpace: "pre-line" }}>
+            {/* <p>SKILLED ACROSS</p>
             <p>FULLSTACK DEVELOPMENT,</p>
             <p>UI/UX/USER RESEARCH, </p>
-            <p>& EMBEDDED SYSTEMS.</p>
+            <p>& EMBEDDED SYSTEMS.</p> */}
+            <p>
+              {
+                "I believe in\n software as an expression of loving attention: it\
+              takes a great deal of patience and care to build systems attuned\
+              \nto human needs and desires."
+              }
+            </p>
           </div>
         </div>
       </div>

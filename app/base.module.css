@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 60px 440px repeat(2, 60px) 1fr;
   grid-template-rows:
     minmax(800px, auto)
-    275px 400px auto 350px 1fr;
+    210px 400px auto 350px 1fr;
   overflow: hidden;
   font-family: var(--font-martian);
   color: var(--main-text-color);
@@ -166,7 +166,7 @@
 
 .paragraph {
   /* font-family: var(--font-martian); */
-  font-size: 20px;
+  font-size: 18px;
   grid-column: 2 / 4;
   font-weight: 300;
   position: relative;
