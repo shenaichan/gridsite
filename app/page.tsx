@@ -72,7 +72,7 @@ export default function Home() {
             </p>
             <p>
               <span style={{ color: "var(--emph-text-color)" }}>&</span>
-              ARTIST
+              ARTIST...
             </p>
           </div>
         </div>
@@ -92,14 +92,13 @@ export default function Home() {
           mostly work on the web.
         </p> */}
         <p>
-          ... who loves working{" "}
-          <span className={css.bold}>across diciplines</span> and with{" "}
-          <span className={css.bold}>diverse groups of people</span>.
+          who loves working <span className={css.bold}>across diciplines</span>{" "}
+          and with <span className={css.bold}>diverse groups of people</span>.
         </p>
         <br />
         <p>
-          ... who believes <span className={css.bold}>writing is thinking</span>
-          , and is always seeking to be a better communicator and a better{" "}
+          who believes <span className={css.bold}>writing is thinking</span>,
+          and is always seeking to be a better communicator and a better{" "}
           <span className={css.bold}>student of the world</span>.
         </p>
         <br />
@@ -113,7 +112,7 @@ export default function Home() {
         <br /> */}
         {/* <p>... who is currently...</p> */}
         <p>
-          ... who studied{" "}
+          who studied{" "}
           <span className={css.bold}>human-computer interaction</span> and{" "}
           <span className={css.bold}>computer engineering</span> at{" "}
           <span className={css.bold}>Carnegie Mellon</span>, and participated in
@@ -122,11 +121,11 @@ export default function Home() {
         </p>
         <br />
         <p className={css.bold} style={{ fontSize: "22px" }}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... who is currently...
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;who is currently...
         </p>
       </div>
       <div className={css.desperation}>
-        SEEKING FULLTIME SOFTWARE ENGINEERING WORK!
+        SEEKING NEW GRAD SOFTWARE ENGINEERING WORK!
       </div>
       <div
         style={{
@@ -201,6 +200,37 @@ export default function Home() {
               takes a great deal of patience and care to build systems attuned\
               \nto human needs and desires."
               }
+            </p>
+          </div>
+        </div>
+        <div style={{ gridArea: "-3 / 2 / -2 / -3" }}>
+          <div className={css.paragraph}>
+            <br />
+            <p style={{ fontSize: "24px", fontWeight: "500" }}>
+              NOTES FROM AFAR
+            </p>
+            <p style={{ fontSize: "18px", lineHeight: "2" }}>
+              <a href="">live site</a> {"//"}{" "}
+              <a href="">code and documentation</a>
+            </p>
+            <p
+              style={{ fontSize: "16px", color: "#666294", fontWeight: "275" }}
+            >
+              Python + Django + Django Ninja + TypeScript + React + HTML + CSS +
+              MapBox API + OpenAI API + PostgreSQL + Render
+            </p>
+            <br />
+            <p style={{ fontSize: "16px", fontWeight: "275" }}>
+              Designed, programmed, user tested, and deployed fully-functional
+              web application where users can leave anonymous notes about their
+              long distance relationships.
+            </p>
+            <br />
+            <p style={{ fontSize: "16px", fontWeight: "275" }}>
+              <span style={{ fontWeight: "500", color: "red" }}>Why?</span> I
+              {"'"}m interested in adding avenues of serendipity and caretaking
+              to relationships that, for one reason or another, might not have
+              the privilege of physical presence.
             </p>
           </div>
         </div>

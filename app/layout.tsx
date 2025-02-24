@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Martian_Mono } from "next/font/google";
+import { Martian_Mono, Inter } from "next/font/google";
 
 const martian = Martian_Mono({
   variable: "--font-martian",
   axes: ["wdth"],
   adjustFontFallback: false,
   fallback: ["monospace"],
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -22,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={martian.variable}>{children}</body>
+      <body className={`${martian.variable} ${inter.variable} antialiasing`}>
+        {children}
+      </body>
     </html>
   );
 }
